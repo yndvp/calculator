@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="nomad9.css">
+</head>
+<body>
+    
+    <div class="grid-container">
+        
+        <span class="grid-item result">0</span>
+        <input type="button" class="grid-item reset" onClick="reset()" value="c">
+        <input type="button" class="grid-item number" onClick="numberIsPressed(this.value); putInArray(this.value)" value="7">
+        <input type="button" class="grid-item number" onClick="numberIsPressed(this.value); putInArray(this.value)" value="8">
+        <input type="button" class="grid-item number" onClick="numberIsPressed(this.value); putInArray(this.value)" value="9">
+        <input type="button" class="grid-item cal" onClick="putInArray(this.value); calIsPressed()" value="+">
+        <input type="button" class="grid-item number" onClick="numberIsPressed(this.value); putInArray(this.value)" value="4">
+        <input type="button" class="grid-item number" onClick="numberIsPressed(this.value); putInArray(this.value)" value="5">
+        <input type="button" class="grid-item number" onClick="numberIsPressed(this.value); putInArray(this.value)" value="6">
+        <input type="button" class="grid-item cal" onClick="putInArray(this.value); calIsPressed()" value="-">
+        <input type="button" class="grid-item number" onClick="numberIsPressed(this.value); putInArray(this.value)" value="1">
+        <input type="button" class="grid-item number" onClick="numberIsPressed(this.value); putInArray(this.value)" value="2">
+        <input type="button" class="grid-item number" onClick="numberIsPressed(this.value); putInArray(this.value)" value="3">
+        <input type="button" class="grid-item cal" onClick="putInArray(this.value); showResult(); calIsPressed()" value="*">
+        <input type="button" class="grid-item number zero" onClick="numberIsPressed(this.value); putInArray(this.value)" value="0">
+        <input type="button" class="grid-item same" onClick="showResult()" value="=">
+        <input type="button" class="grid-item cal" onClick="putInArray(this.value); calIsPressed()" value="/">
+       
+    </div>
+
+    <script src="nomad9.js"></script>
+</body>
+</html>

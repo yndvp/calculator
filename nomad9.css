@@ -1,0 +1,51 @@
+div {
+    width: 650px;
+}
+.grid-container {
+    display: grid;
+    background-color:black;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+}
+.grid-item {
+    font-size: 25px;
+    color:white;
+    margin: 5px;
+    border-radius: 25px;
+    border-style: hidden;
+    outline: none;
+    padding:20px; 
+}
+input {
+    cursor: pointer;
+}
+.result {
+    font-size: 30px;
+    direction: rtl;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.number,
+.same {
+    background-color: rgb(78, 78, 78);
+}
+.number:active,
+.same:active {
+    background-color: #3d3d3d;
+}
+.cal {
+    background-color: rgb(255, 133, 20);
+}
+.cal:active {
+    background-color: #cf5d00;
+}
+.reset {
+    background-color: rgb(190, 190, 190);
+}
+.reset:active {
+    background-color: gainsboro;
+}
